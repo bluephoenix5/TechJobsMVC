@@ -4,6 +4,18 @@
 
     @{
         //TODO #1: Use a loop to display job results in a table.
+        <table>
+            <tr>
+                @foreach (var job in @ViewBag.title)
+                {
+                    /*<th>@ViewBag.employers</th>*/
+                    <td>@ViewBag.employers</td>
+                    <td>@ViewBag.locations</td>
+                    <td>@ViewBag.positionTypes</td>
+                    <td>@ViewBag.skills</td>
+                }
+            </tr>
+        </table>
     }
 
 
